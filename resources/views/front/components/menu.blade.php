@@ -39,8 +39,11 @@
                                 </div>
                             </a>
                         </div>
-                        <h3>{{ $product->title }}</h3>
-                        <h4>$100.00 - <del>$120.00</del></h4>
+                        <div style="display: flex; justify-content: space-between;">
+                            <h4>{{ $product->title }}</h4>
+                            <h4>{{ $product->price }}</h4>
+                        </div>
+                        
                     </div>
                 @endforeach
 

@@ -18,7 +18,7 @@ class Product extends Model
 
     protected $appends = ['image'];
 
-    public $translatedAttributes = ['title', 'description'];
+    public $translatedAttributes = ['title', 'description','price'];
 
     public $timestamps = true;
 

@@ -32,33 +32,49 @@ class ProductSeeder extends Seeder
 
         ];
         $title_en = [
-            "Tea",
-            "Tea",
-            "Tea",
+            "Iced Coffee",
+            "Tea With Milk",
+            "Iced Tea",
             "Tea",
             "Latte",
-            "Ice Latte",
+            "Iced Latte",
             "Latte",
             "Latte tea",
-            "Milk ",
-            "Ice cream with coffee ",
+            "Milk Shake ",
             "Coffee",
-            "Espresso"
+            "Espresso",
+            "Ice cream with coffee ",
         ];
 
         $title_ar = [
-           "شاي",
-           "شاي",
-            "شاي",
+           "قهوة مثلجة",
+            "شاي بالحليب",
+            "شاي مثلج",
             "شاي",
             "لاتيه",
             "لاتيه مثلج",
             "لاتيه",
             "شاي لاتيه",
-            "حليب",
-            "آيس كريم مع قهوة",
+            "ميلك شيك",
             "قهوة",
-            "إسبرسو"
+            "إسبريسو",
+            "آيس كريم بالقهوة",
+        ];
+
+        $price=[
+
+            "10$",
+            "5$ ",
+            "5$",
+            "3$",
+            "15$",
+            "15$",
+            "15$",
+            "20$",
+            "30$",
+            "12.5$",
+            "25$",
+            "40$",
         ];
 
         for ($i = 0; $i < count($image); $i++) {
@@ -66,10 +82,13 @@ class ProductSeeder extends Seeder
                 [
                     'ar' => [
                         'title' => $title_ar[$i],
+                        'price' => $price[$i],
+
                       
                     ],
                     'en' => [
                         'title' => $title_en[$i],
+                        'price' => $price[$i],
                        
                     ],
                     'status' => 1
