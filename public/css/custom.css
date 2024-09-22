@@ -1,0 +1,11 @@
+
+/* Footer */
+.developer-company a {
+    color: #3699ff;
+
+    transition: color 250ms;
+}
+
+.developer-company a:hover {
+    color: #181c32;
+}
