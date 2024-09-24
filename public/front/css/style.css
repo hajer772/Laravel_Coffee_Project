@@ -2578,7 +2578,7 @@ header .main-navigation nav .navbar-nav .nav-link {
         justify-content: space-between;
     }
     
-    .container .search h1 {
+    .container .search .items h1 {
         letter-spacing: 1px;
         font-size: 25px;
         display: inline-block;
@@ -2608,7 +2608,7 @@ header .main-navigation nav .navbar-nav .nav-link {
         justify-content: space-between;
     }
 
-    .container .search h1 {
+    .container .search .items h1 {
         letter-spacing: 1px;
         font-size: 30px;
         display: inline-block;
@@ -2638,7 +2638,7 @@ header .main-navigation nav .navbar-nav .nav-link {
         justify-content: space-between;
     }
     
-    .container .search h1 {
+    .container .search .items h1 {
         letter-spacing: 3px;
         display: inline-block;
         border-bottom: 2px solid rgba(73, 14, 14, 0.678);
@@ -2665,9 +2665,9 @@ header .main-navigation nav .navbar-nav .nav-link {
         justify-content: space-between;
     }
 
-    .container .search h1 {
+    .container .search .items h1 {
         letter-spacing: 3px;
-        display: inline-block;
+        display: inline-block ;
         border-bottom: 2px solid rgba(73, 14, 14, 0.678);
         padding-bottom: 10px;
     }
@@ -2692,7 +2692,7 @@ header .main-navigation nav .navbar-nav .nav-link {
         justify-content: space-between;
     }
 
-    .container .search h1 {
+    .container .search .items h1 {
         letter-spacing: 3px;
         display: inline-block;
         border-bottom: 2px solid rgba(73, 14, 14, 0.678);
@@ -2710,3 +2710,43 @@ header .main-navigation nav .navbar-nav .nav-link {
         outline: none;
     }
 }
+
+
+/* ---------------------- Filter by button---------------------- */
+.items {
+    float: center !important;;
+}
+.items ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.items ul li {
+    list-style: none;
+    margin: 1.5rem 1rem;
+}
+
+.items ul li button.item {
+    color: #440817;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: .6rem 1.8rem;
+    border: 2px solid  #440817;
+    background-color: transparent;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.items ul li button.item:hover {
+    color: #fff;
+    background-color:  #440817;
+}
+
+.item.active {
+    color: #fff!important;
+    background-color:  #440817 !important;
+}
+
+

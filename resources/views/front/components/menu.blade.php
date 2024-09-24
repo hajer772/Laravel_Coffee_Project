@@ -18,9 +18,23 @@
 
 
         <div class="container">
-            <div class="search">
-                <h1>{{ __("words.menu-all") }}</h1>
+            {{-- <div class="search">
+                <h1>{{ __('words.menu-all') }}</h1>
                 <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+
+                
+            </div> --}}
+
+            <div class="items">
+                <form method="get" action="{{ route('front.index') }}#menu">
+                    <ul>
+                        <li><button name="category" value="All" type="submit" class="item">{{ __('words.menu-all') }}</button></li>
+                        <li><button name="category" value="1" type="submit" class="item" >{{ __("words.menu-hot") }}</button></li>
+                        <li><button name="category" value="2" type="submit" class="item" >{{ __("words.menu-cold") }}</button></li>
+                        <li><button name="category" value="3" type="submit" class="item" >{{ __("words.menu-espresso") }}</button></li>
+                        <li><button name="category" value="4" type="submit" class="item">{{ __("words.menu-ice-cream") }}</button></li>
+                    </ul>
+                </form>
             </div>
             <div class="product-list row">
 
@@ -40,10 +54,10 @@
                             </a>
                         </div>
                         <div style="display: flex; justify-content: space-between;">
-                            <h4>{{ $product->title }}</h4>
+                            <h3>{{ $product->title }}</h3>
                             <h4>{{ $product->price }}</h4>
                         </div>
-                        
+
                     </div>
                 @endforeach
 
@@ -126,3 +140,5 @@
 </section>
 
 <!-- End Menu Section -->
+
+

@@ -401,8 +401,11 @@ return [
     "menu-title"=>"قائمة القهوة لدينا",
     "menu-paragraph"=>"Lorem Ipsum هو ببساطة نص شكلي غير حقيقي للطباعة والتنضيد. لقد كان Lorem Ipsum النص الشكلي القياسي في الصناعة. لقد كان Lorem Ipsum النص الشكلي القياسي في الصناعة.",
     "menu-all"=>"جميع المنتجات",
-
     "menu-hover-img"=>"كوب قهوة",
+    "menu-hot"=>"ساخن",
+    "menu-cold"=>"بارد",
+    "menu-espresso"=>"إسبرسو",
+    "menu-ice-cream"=>"آيس كريم",
 
     "contact-title"=>"ضع طلبك",
     "contact-input-name"=>"اسمك",

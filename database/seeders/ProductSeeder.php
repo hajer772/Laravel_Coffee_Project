@@ -47,7 +47,7 @@ class ProductSeeder extends Seeder
         ];
 
         $title_ar = [
-           "قهوة مثلجة",
+            "قهوة مثلجة",
             "شاي بالحليب",
             "شاي مثلج",
             "شاي",
@@ -61,7 +61,7 @@ class ProductSeeder extends Seeder
             "آيس كريم بالقهوة",
         ];
 
-        $price=[
+        $price = [
 
             "10$",
             "5$ ",
@@ -77,21 +77,36 @@ class ProductSeeder extends Seeder
             "40$",
         ];
 
+        $cat_no = [
+            1,
+            2,
+            1,
+            2,
+            2,
+            1,
+            2,
+            2,
+            1,
+            2,
+            3,
+            4,
+        ];
+
         for ($i = 0; $i < count($image); $i++) {
             $product = Product::create(
                 [
                     'ar' => [
                         'title' => $title_ar[$i],
                         'price' => $price[$i],
-
-                      
                     ],
                     'en' => [
                         'title' => $title_en[$i],
                         'price' => $price[$i],
-                       
                     ],
-                    'status' => 1
+                    'status' => 1,
+                    'category_id' =>$cat_no[$i],
+                
+
                 ]
             );
             $product->file()->create([

@@ -400,6 +400,10 @@ return [
     "menu-paragraph"=>"Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.",
     "menu-all"=>"All Products",
     "menu-hover-img"=>"Coffee Cup",
+    "menu-hot"=>"Hot",
+    "menu-cold"=>"Cold",
+    "menu-espresso"=>"Espresso",
+    "menu-ice-cream"=>"Ice cream",
 
     "contact-title"=>"Place your order",
     "contact-input-name"=>"Your Name",

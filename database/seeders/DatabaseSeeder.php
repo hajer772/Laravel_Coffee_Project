@@ -20,7 +20,9 @@ class DatabaseSeeder extends Seeder
         $this->call(AdminSeeder::class);
         $this->call(SettingSeeder::class);
         $this->call(SettingContactSeeder::class);
+        $this->call(CategorySeeder::class);
         $this->call(FeatureSeeder::class);
+
         $this->call(ProductSeeder::class);
         $this->call(TestimonialSeeder::class);
         $this->call(CounterSeeder::class);

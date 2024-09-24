@@ -14,13 +14,38 @@ use App\Models\Testimonial;
 class HomeController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-        $counters=Counter::all();
+        $counters = Counter::all();
+        $testimonials = Testimonial::all();
+        $contacts = Contact::all();
         $products=Product::all();
-        $testimonials=Testimonial::all();
-        $contacts=Contact::all();
-        return view("front.index",compact("counters","products",'testimonials','contacts'));
+
+        if ($request->has('category')) {
+            $category = $request->input('category');
+
+            if ($category === 'All') {
+                $products = Product::all();
+            } else {
+                $products = Product::where('category_id', $category)->get();
+            }
+
+            return view("front.index", compact("counters", "products", 'testimonials', 'contacts'));
+        }
+
+
+
+        return view("front.index", compact("counters", "products", 'testimonials', 'contacts'));
+
+
+
+
+
+
+        //  dd($request);
+
+
+
     }
 
     // /**

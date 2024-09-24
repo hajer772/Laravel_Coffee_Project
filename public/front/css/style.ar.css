@@ -430,7 +430,7 @@ header .main-navigation nav .navbar-nav .nav-link{
     left: 0;
     top: 0;
     bottom: 0;
-    background-image: url("../images/slider-1.jpg");
+    background-image: url("../images/counter.avif");
     background-size: cover;
     background-position: center;
     z-index: 2032;
@@ -1518,37 +1518,38 @@ header .main-navigation nav .navbar-nav .nav-link{
     width: 100px;
     height: 100px;
     top: 50%;
-    right: 50%;
+    left: 50%;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.coffee-cup{
+.coffee-cup {
     height: 80px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 }
 
 .smoke-wave {
     width: 50px;
     height: 50px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
     position: relative;
     top: 0;
-    right: 0;
+    left: 0;
 }
 
 .smoke1 {
     width: 6px;
     height: 30px;
-    float: right;
-    margin-left: 6px;
-    margin-right: 0;
+    float: left;
+    margin-right: 6px;
+    margin-left: 0;
     border-radius: 3px;
 }
 
-.smoke1:before, .smoke1:after {
+.smoke1:before,
+.smoke1:after {
     content: "";
     background: #ffffff;
     position: absolute;
@@ -1559,13 +1560,14 @@ header .main-navigation nav .navbar-nav .nav-link{
 .smoke2 {
     width: 6px;
     height: 15px;
-    float: right;
-    margin-left: 6px;
-    margin-right: 4px;
+    float: left;
+    margin-right: 6px;
+    margin-left: 4px;
     border-radius: 3px;
 }
 
-.smoke2:before, .smoke2:after {
+.smoke2:before,
+.smoke2:after {
     content: "";
     background: #ffffff;
     position: absolute;
@@ -1577,13 +1579,14 @@ header .main-navigation nav .navbar-nav .nav-link{
 .smoke3 {
     width: 6px;
     height: 30px;
-    float: right;
-    margin-left: 6px;
-    margin-right: 4px;
+    float: left;
+    margin-right: 6px;
+    margin-left: 4px;
     border-radius: 3px;
 }
 
-.smoke3:before, .smoke3:after {
+.smoke3:before,
+.smoke3:after {
     content: "";
     background: #ffffff;
     position: absolute;
@@ -1592,10 +1595,25 @@ header .main-navigation nav .navbar-nav .nav-link{
 }
 
 @keyframes load {
-    0% { top: 0; height: 30px; width: 6px; opacity: 0; }
-    50% {opacity: 1;  }
-    100% { top: 29px; height: 15px; width: 6px; opacity: 0;}
+    0% {
+        top: 0;
+        height: 30px;
+        width: 6px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 29px;
+        height: 15px;
+        width: 6px;
+        opacity: 0;
+    }
 }
+
 /* ===================================
     End Loader
 ====================================== */
@@ -2152,6 +2170,7 @@ header .main-navigation nav .navbar-nav .nav-link{
 
 
 
+
 /* ------------------------------ */
 
 /* Extra small devices (phones, 600px and down) */
@@ -2164,7 +2183,7 @@ header .main-navigation nav .navbar-nav .nav-link{
         justify-content: space-between;
     }
     
-    .container .search h1 {
+    .container .search .items h1 {
         letter-spacing: 1px;
         font-size: 25px;
         display: inline-block;
@@ -2194,7 +2213,7 @@ header .main-navigation nav .navbar-nav .nav-link{
         justify-content: space-between;
     }
 
-    .container .search h1 {
+    .container .search .items h1 {
         letter-spacing: 1px;
         font-size: 30px;
         display: inline-block;
@@ -2224,7 +2243,7 @@ header .main-navigation nav .navbar-nav .nav-link{
         justify-content: space-between;
     }
     
-    .container .search h1 {
+    .container .search .items h1 {
         letter-spacing: 3px;
         display: inline-block;
         border-bottom: 2px solid rgba(73, 14, 14, 0.678);
@@ -2251,9 +2270,9 @@ header .main-navigation nav .navbar-nav .nav-link{
         justify-content: space-between;
     }
 
-    .container .search h1 {
+    .container .search .items h1 {
         letter-spacing: 3px;
-        display: inline-block;
+        display: inline-block ;
         border-bottom: 2px solid rgba(73, 14, 14, 0.678);
         padding-bottom: 10px;
     }
@@ -2278,7 +2297,7 @@ header .main-navigation nav .navbar-nav .nav-link{
         justify-content: space-between;
     }
 
-    .container .search h1 {
+    .container .search .items h1 {
         letter-spacing: 3px;
         display: inline-block;
         border-bottom: 2px solid rgba(73, 14, 14, 0.678);
@@ -2296,3 +2315,43 @@ header .main-navigation nav .navbar-nav .nav-link{
         outline: none;
     }
 }
+
+
+/* ---------------------- Filter by button---------------------- */
+.items {
+    float: center !important;;
+}
+.items ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.items ul li {
+    list-style: none;
+    margin: 1.5rem 1rem;
+}
+
+.items ul li button.item {
+    color: #440817;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: .6rem 1.8rem;
+    border: 2px solid  #440817;
+    background-color: transparent;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.items ul li button.item:hover {
+    color: #fff;
+    background-color:  #440817;
+}
+
+.item.active {
+    color: #fff!important;
+    background-color:  #440817 !important;
+}
+
+
