@@ -8,6 +8,7 @@ use App\Models\Contact;
 use Illuminate\Http\Request;
 use App\Models\Feature;
 use App\Models\Product;
+use App\Models\Service;
 use App\Models\Slider;
 use App\Models\Testimonial;
 
@@ -18,6 +19,9 @@ class HomeController extends Controller
     {
         $counters = Counter::all();
         $testimonials = Testimonial::all();
+        $services = Service::all();
+        $sliders = Slider::all();
+
         $contacts = Contact::all();
         $products=Product::all();
 
@@ -30,12 +34,12 @@ class HomeController extends Controller
                 $products = Product::where('category_id', $category)->get();
             }
 
-            return view("front.index", compact("counters", "products", 'testimonials', 'contacts'));
+            return view("front.index", compact("counters", "products", 'testimonials', 'contacts','services','sliders'));
         }
 
 
 
-        return view("front.index", compact("counters", "products", 'testimonials', 'contacts'));
+        return view("front.index", compact("counters", "products", 'testimonials', 'contacts','services','sliders'));
 
 
 

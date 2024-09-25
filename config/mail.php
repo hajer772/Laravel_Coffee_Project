@@ -113,6 +113,8 @@ return [
         'paths' => [
             resource_path('views/vendor/mail'),
         ],
+
+        
     ],
 
 ];

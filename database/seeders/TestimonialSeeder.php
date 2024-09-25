@@ -47,7 +47,7 @@ class TestimonialSeeder extends Seeder
                 'status' => 1
             ]);
             $testimonial->file()->create([
-                'path' => '../front/images/' . $images[$s],
+                'path' => 'seeders/front/images/' . $images[$s],
                 'type' => 'image'
             ]);
         }

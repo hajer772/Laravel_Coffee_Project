@@ -10,22 +10,76 @@ class SliderSeeder extends Seeder
 {
     public function run()
     {
-        $images = ['1.jpg', '2.png', '3.jpg'];
-        $titles = ['شبكات الإنترنت', 'البيوت الذكية ونظم حماية الطاقة', 'أنظمة لإطفاء الحريق'];
-        $descriptions = ['<p>يتم توفير خدمات شبكة عالمية متكاملة ومتقدمة. وتتضمن هذه الخدمات مجموعة واسعة من الأجهزة والأنظمة والتطبيقات والخدمات الإلكترونية المختلفة</p>',
-            '<p>يتميز بيوت الذكية عن بيوت الأنسانية عن طريق توفير مجموعة واسعة من المميزات التكنولوجية والأمانية والأداء. ويمكن تشغيلها من خلال شبكات الإنترنت وتوفير بيانات حول استخدام المستشعرات وتحسين تكامل أجهزة الاتصال والأجهزة الأخرى في المنزل</p>',
-            '<p>تتوفر لنا خدمات تطوير نظم اطفاء الحريق ونظم حماية الطاقة. ويتضمن تطوير نظم اطفاء الحريق مجموعة واسعة من التطبيقات والأجهزة والأنظمة الذين يمكنهم تكاملاً وتشغيلاً تشابه الانساني</p>'];
+        $images = [
+            'coffee-left.jpg',
+            'coffee-center.jpg',
+            'coffee-right.jpg'
+        ];
 
-        for ($s = 0; $s < count($titles); $s++) {
+        $subtitle_en = [
+            "Best in Town",
+            "Best in Town",
+            "Best in Town",
+        ];
+        $subtitle_ar = [
+            "الأفضل في المدينة",
+            "الأفضل في المدينة",
+            "الأفضل في المدينة",
+        ];
+
+        $title_ar = [
+            "بيت القهوة",
+            "بيت القهوة",
+            "بيت القهوة",
+        ];
+        $title_en = [
+            "Coffee House",
+            "Coffee House",
+            "Coffee House",
+        ];
+
+        $description_en = [
+            "Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.",
+            "Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.",
+            "Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.",
+        ];
+
+        $description_ar = [
+            "Lorem ipsum هو ببساطة نص شكلي بديل للطباعة والتنضيد. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة.",
+            "Lorem ipsum هو ببساطة نص شكلي بديل للطباعة والتنضيد. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة.",
+            "Lorem ipsum هو ببساطة نص شكلي بديل للطباعة والتنضيد. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة.",
+        ];
+
+        $button_value_en = [
+            "LEARN MORE",
+            "LEARN MORE",
+            "LEARN MORE",
+        ];
+        $button_value_ar = [
+            "اعرف المزيد",
+            "اعرف المزيد",
+            "اعرف المزيد",
+        ];
+
+        for ($s = 0; $s < count($title_en); $s++) {
             $slider = Slider::create([
                 'ar' => [
-                    'title' => $titles[$s],
-                    'description' => $descriptions[$s]
+                    'title' => $title_ar[$s],
+                    'description' => $description_ar[$s],
+                    'subtitle' => $subtitle_ar[$s],
+                    'button'=>$button_value_ar[$s]
+                ],
+                'en' => [
+                    'title' => $title_en[$s],
+                    'description' => $description_en[$s],
+                    'subtitle' => $subtitle_en[$s],
+                    'button'=>$button_value_en[$s]
+
                 ],
                 'status' => 1
             ]);
             $slider->file()->create([
-                'path' => 'seeders/sliders/' . $images[$s],
+                'path' => 'seeders/front/images/' . $images[$s],
                 'type' => 'image'
             ]);
         }

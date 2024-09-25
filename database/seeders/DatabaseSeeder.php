@@ -22,10 +22,13 @@ class DatabaseSeeder extends Seeder
         $this->call(SettingContactSeeder::class);
         $this->call(CategorySeeder::class);
         $this->call(FeatureSeeder::class);
-
+        $this->call(ServicesSeeder::class);
         $this->call(ProductSeeder::class);
         $this->call(TestimonialSeeder::class);
         $this->call(CounterSeeder::class);
+        $this->call(InnerPageSeeder::class);
+        $this->call(SliderSeeder::class);
+
 
 //        NewsLetter::factory(6000)->create();
     }

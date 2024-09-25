@@ -110,7 +110,7 @@ class ProductSeeder extends Seeder
                 ]
             );
             $product->file()->create([
-                'path' => '../front/images/' . $image[$i],
+                'path' => 'seeders/front/images/' . $image[$i],
                 'type' => 'image',
             ]);
         }

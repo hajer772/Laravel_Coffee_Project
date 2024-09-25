@@ -19,7 +19,8 @@ class CreateSliderTranslationsTable extends Migration
             $table->string('locale')->index();
             $table->string('title')->nullable();
             $table->longText('description')->nullable();
-            $table->string('client_name')->nullable();
+            $table->string('subtitle')->nullable();
+            $table->string('button')->nullable();
 
 
             $table->unique(['slider_id', 'locale']);

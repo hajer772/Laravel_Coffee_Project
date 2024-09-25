@@ -358,42 +358,11 @@ return [
     "blog-paragraph"=>"Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.",
     "blog-button"=> "Read Blog",
 
-    "slider1-subtitle"=>"Best in Town",
-    "slider1-title"=>"Coffee House",
-    "slider1-paragraph"=>"Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.",
-    "slider1-button"=>"LEARN MORE",
-
-    "slider2-subtitle"=>"Best in Town",
-    "slider2-title"=>"Coffee House",
-    "slider2-paragraph"=>"Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.",
-    "slider2-button"=>"LEARN MORE",
-
-    "slider3-subtitle"=>"Best in Town",
-    "slider3-title"=>"Coffee House",
-    "slider3-paragraph"=>"Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.",
-    "slider3-button"=>"LEARN MORE",
-
     "about-subtitle"=>"Top quality coffee",
     "about-title"=>"Best Coffee in Town",
     "about-paragraph"=>"Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.",
 
-    "about-item1-title"=>"We are food lovers",
-    "about-item1-paragraph"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.",
-
-    "about-item2-title"=>"Diversity in food",
-    "about-item2-paragraph"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.",
-
-    "about-item3-title"=>"100% Free Delivery",
-    "about-item3-paragraph"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.",
-
-    "about-item4-title"=>"We are food lovers",
-    "about-item4-paragraph"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.",
-
-    "about-item5-title"=>"Diversity in food",
-    "about-item5-paragraph"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.",
-
-    "about-item6-title"=>"100% Free Delivery",
-    "about-item6-paragraph"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.",
+ 
 
     "menu-subtitle"=>"Top quality coffee",
     "menu-title"=>"Our Coffee Menu",
@@ -422,17 +391,6 @@ return [
     "stand-inner-sec-title"=> "Section Title",
     "stand-inner-sec-paragraph"=> "Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.",
 
-    "stand-inner-sec2-subtitle"=>"Most flexible one page",
-    "stand-inner-sec2-title"=> "Standalone Heading",
-    "stand-inner-sec2-paragraph"=> "Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.",
-
-    "stand-inner-sec3-subtitle"=>"Most flexible one page",
-    "stand-inner-sec3-title"=> "Standalone Heading",
-    "stand-inner-sec3-paragraph"=> "Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.",
-
-    "stand-inner-sec4-subtitle"=>"Most flexible one page",
-    "stand-inner-sec4-title"=> "Standalone Heading",
-    "stand-inner-sec4-paragraph"=> "Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. ",
 
 
 ];

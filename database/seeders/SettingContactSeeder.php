@@ -11,23 +11,22 @@ class SettingContactSeeder extends Seeder
     public function run()
     {
         $setting = Setting::first();
-        //contact 1
-        //contact 4
+        // count 1
         $setting->contact()->create([
             "status" => "1",
             "contact" => "https://www.facebook.com/",
             "type" => "social",
             "icon" => "fab fa-facebook-f",
         ]);
-
-        //contact 6
+        // count 2
         $setting->contact()->create([
             "status" => "1",
             "contact" => "https://twitter.com/",
             "type" => "social",
             "icon" => "fab fa-twitter",
         ]);
-        //contact 3
+
+        // count 3
         $setting->contact()->create([
             "status" => "1",
             "contact" => "contact@advacon.com",
@@ -35,7 +34,7 @@ class SettingContactSeeder extends Seeder
             "icon" => "far fa-envelope",
         ]);
 
-        //contact 7
+        // count 4
         $setting->contact()->create([
             "status" => "1",
             "contact" => "https://www.linkedin.com/",
@@ -43,7 +42,7 @@ class SettingContactSeeder extends Seeder
             "icon" => "fab fa-linkedin-in",
         ]);
 
-        //contact 5
+        // count 5 
         $setting->contact()->create([
             "status" => "1",
             "contact" => "https://www.instagram.com/",
@@ -51,7 +50,7 @@ class SettingContactSeeder extends Seeder
             "icon" => "fab fa-instagram",
         ]);
 
-
+        // count 6
          $setting->contact()->create([
             "status" => "1",
             "contact" => "https://www.pinterest.com/",

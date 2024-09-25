@@ -17,7 +17,7 @@ class Slider extends Model
 
     protected $appends = ['image'];
 
-    public $translatedAttributes = ['title', 'description','client_name'];
+    public $translatedAttributes = ['title', 'description','subtitle','button'];
 
     public $timestamps = true;
 

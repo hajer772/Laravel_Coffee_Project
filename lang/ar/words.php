@@ -359,43 +359,9 @@ return [
     "blog-paragraph"=>"Lorem ipsum هو ببساطة نص شكلي بديل للطباعة والتنضيد. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة.",
     "blog-button"=> "اقرأ المدونة",
 
-    "slider1-subtitle"=>"الأفضل في المدينة",
-    "slider1-title"=>"بيت القهوة",
-    "slider1-paragraph"=>"Lorem ipsum هو ببساطة نص شكلي بديل للطباعة والتنضيد. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة.",
-    "slider1-button"=>"اعرف المزيد",
-
-    "slider2-subtitle"=>"الأفضل في المدينة",
-    "slider2-title"=>"بيت القهوة",
-    "slider2-paragraph"=>"Lorem ipsum هو ببساطة نص شكلي بديل للطباعة والتنضيد. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة.",
-    "slider2-button"=>"اعرف المزيد",
-
-    "slider3-subtitle"=>"الأفضل في المدينة",
-    "slider3-title"=>"بيت القهوة",
-    "slider3-paragraph"=>"Lorem ipsum هو ببساطة نص شكلي بديل للطباعة والتنضيد. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة. لقد كان Lorem Ipsum النص الشكلي البديل القياسي في الصناعة.",
-    "slider3-button"=>"اعرف المزيد",
-
-
     "about-subtitle"=>"قهوة عالية الجودة",
     "about-title"=>"أفضل قهوة في المدينة",
     "about-paragraph"=>"Lorem Ipsum هو ببساطة نص شكلي غير حقيقي للطباعة والتنضيد. لقد كان Lorem Ipsum النص الشكلي القياسي في الصناعة. لقد كان Lorem Ipsum النص الشكلي القياسي في الصناعة.",
-
-    "about-item1-title"=>"نحن نحب الطعام",
-    "about-item1-paragraph"=>"لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. Pellentesque dignissim viverra ultrices.",
-
-    "about-item2-title"=>"التنوع في الغذاء",
-    "about-item2-paragraph"=>"لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. Pellentesque dignissim viverra ultrices.",
-
-    "about-item3-title"=>"توصيل مجاني 100%",
-    "about-item3-paragraph"=>"لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. Pellentesque dignissim viverra ultrices.",
-
-    "about-item4-title"=>"نحن نحب الطعام",
-    "about-item4-paragraph"=>"لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. Pellentesque dignissim viverra ultrices.",
-
-    "about-item5-title"=>"التنوع في الغذاء",
-    "about-item5-paragraph"=>"لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. Pellentesque dignissim viverra ultrices.",
-
-    "about-item6-title"=>"توصيل مجاني 100%",
-    "about-item6-paragraph"=>"لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. Pellentesque dignissim viverra ultrices.",
 
     "menu-subtitle"=>"قهوة عالية الجودة",
     "menu-title"=>"قائمة القهوة لدينا",
@@ -424,16 +390,6 @@ return [
     "stand-inner-sec-title"=> "عنوان القسم",
     "stand-inner-sec-paragraph"=> "Lorem Ipsum هو ببساطة نص شكلي غير حقيقي للطباعة والتنضيد. لقد كان Lorem Ipsum النص الشكلي القياسي في الصناعة. لقد كان Lorem Ipsum النص الشكلي القياسي في الصناعة.",
 
-    "stand-inner-sec2-subtitle"=>"أكثر مرونة في صفحة واحدة",
-    "stand-inner-sec2-title"=> "عنوان مستقل",
-    "stand-inner-sec2-paragraph"=> "يُعد نص Lorem Ipsum ببساطة نصًا شكليًا (بمعنى أنه ليس بالضرورة نصًا شكليًا) يُستخدم في الطباعة والتنضيد. وقد ظل نص Lorem Ipsum هو النص الشكلي القياسي في هذه الصناعة.",
 
-    "stand-inner-sec3-subtitle"=>"أكثر مرونة في صفحة واحدة",
-    "stand-inner-sec3-title"=> "عنوان مستقل",
-    "stand-inner-sec3-paragraph"=> "يُعد نص Lorem Ipsum ببساطة نصًا شكليًا (بمعنى أنه ليس بالضرورة نصًا شكليًا) يُستخدم في الطباعة والتنضيد. وقد ظل نص Lorem Ipsum هو النص الشكلي القياسي في هذه الصناعة.",
-
-    "stand-inner-sec4-subtitle"=>"أكثر مرونة في صفحة واحدة",
-    "stand-inner-sec4-title"=> "عنوان مستقل",
-    "stand-inner-sec4-paragraph"=> "يُعد نص Lorem Ipsum ببساطة نصًا شكليًا (بمعنى أنه ليس بالضرورة نصًا شكليًا) يُستخدم في الطباعة والتنضيد. وقد ظل نص Lorem Ipsum هو النص الشكلي القياسي في هذه الصناعة. ",
 
 ];
