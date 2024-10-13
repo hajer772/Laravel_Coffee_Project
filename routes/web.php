@@ -1,6 +1,8 @@
 <?php
 
+use App\Mail\MyEmail;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\Facades\Auth;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\Http\Controllers\Front\HomeController;
@@ -21,4 +23,9 @@ Route::group([
 
     Route::get('/home', [HomeController::class, 'index'])->name('front.index');
     Route::get('/home/standalone', [StandAloneController::class, 'index'])->name('front.standalone');
+
+    Route::get('/testroute', function () {
+      $name='Hager';
+      Mail::to('hagerashry0@gmail.com')->send(new MyEmail($name));
+    });
 });
