@@ -18,7 +18,7 @@ class MyEmail extends Mailable
      *
      * @return void
      */
-    public function __construct(private $name)
+    public function __construct(private $formdata)
     {
         //
     }
@@ -42,11 +42,16 @@ class MyEmail extends Mailable
      */
     public function content()
     {
+
         return new Content(
             view: 'front.mail.welcome-email',
-            with:['name'=> $this->name]
+            with: [
+                'name' => $this->formdata['userName'],
+                'emailmessage' => $this->formdata['emailmessage']
+            ]
         );
     }
+
 
     /**
      * Get the attachments for the message.

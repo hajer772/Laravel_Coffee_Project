@@ -72,9 +72,9 @@ $(".contact_btn").on('click', function () {
                     }
                 }
             },
-            error: function () {
-                alert("Failer");
-            }
+            // error: function () {
+            //     alert("Failer");
+            // }
         });
 
     }
@@ -176,9 +176,9 @@ $(".modal_contact_btn").on('click', function () {
                 // $("#quote_result").hide().html(output).slideDown();
                 // $(".modal_contact_btn i").addClass('d-none');
             },
-            error: function () {
-                alert("Failer");
-            }
+            // error: function () {
+            //     alert("Failer");
+            // }
         });
 
     }

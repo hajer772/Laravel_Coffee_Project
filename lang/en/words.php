@@ -391,6 +391,8 @@ return [
     "stand-inner-sec-title"=> "Section Title",
     "stand-inner-sec-paragraph"=> "Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.",
 
+    "message-confirmation"=>"Your order has been sent successfully. Thank you!",
+
 
 
 ];

@@ -156,8 +156,6 @@ jQuery(function ($) {
 });
 
 
-
-
-
-
-
+document.querySelector('.message .close').addEventListener('click', function() {
+    this.parentNode.style.display = 'none';
+});

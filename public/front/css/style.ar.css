@@ -2355,3 +2355,7 @@ header .main-navigation nav .navbar-nav .nav-link{
 }
 
 
+.message .close {
+    cursor: pointer;
+    float: left;
+}

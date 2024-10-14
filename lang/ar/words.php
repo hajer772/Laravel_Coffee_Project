@@ -390,6 +390,9 @@ return [
     "stand-inner-sec-title"=> "عنوان القسم",
     "stand-inner-sec-paragraph"=> "Lorem Ipsum هو ببساطة نص شكلي غير حقيقي للطباعة والتنضيد. لقد كان Lorem Ipsum النص الشكلي القياسي في الصناعة. لقد كان Lorem Ipsum النص الشكلي القياسي في الصناعة.",
 
+    "message-confirmation"=>"لقد تم إرسال طلبك بنجاح. شكرا لك!",
+
+
 
 
 ];

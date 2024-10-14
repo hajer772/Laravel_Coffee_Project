@@ -42,4 +42,12 @@
             }
         }
     }
+
+    function m(){
+
+        $("#message").show().delay(5000).fadeOut();
+
+    }
+        
+
 </script>

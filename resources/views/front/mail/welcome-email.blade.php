@@ -22,6 +22,6 @@
 <body style="background: rgb(182, 148, 148)">
    <center> <img src="{{ asset('front/images/logo.png') }}" alt="logo"></center>
     <h1>Welcome {{ $name }}</h1>
-    <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam omnis soluta dolorum voluptatem facilis saepe voluptates velit illo deleniti voluptate natus officiis quidem rerum laborum ea sed corporis consectetur, exercitationem et earum iure vitae beatae. Eligendi explicabo similique tenetur sunt qui accusantium, voluptas adipisci fugiat voluptatem at, corporis aut perspiciatis.</p>
+    <p >{{ $emailmessage }}</p>
 </body>
 </html>

@@ -29,7 +29,7 @@ class SettingContactSeeder extends Seeder
         // count 3
         $setting->contact()->create([
             "status" => "1",
-            "contact" => "contact@advacon.com",
+            "contact" => "hagerashry0@gmail.com",
             "type" => "email",
             "icon" => "far fa-envelope",
         ]);

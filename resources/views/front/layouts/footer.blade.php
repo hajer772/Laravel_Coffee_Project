@@ -7,8 +7,17 @@
                 <div class="footer-social">
                     <ul class="list-unstyled social-icons social-icons-simple">
                         @foreach ($contacts as $contact)
-                            <li><a class="social-icon wow fadeInUp" href="javascript:void(0)"><i
-                                        class="{{ $contact->icon }}" aria-hidden="true"></i> </a> </li>
+                            <li>
+                                @if ($contact->type==="email")
+                                <a class="social-icon wow fadeInUp" href="mailto:{{ $contact->contact }}" target="_blank"> <i
+                                    class="{{ $contact->icon }}" aria-hidden="true"></i> </a> 
+                                @else
+                                
+                                <a class="social-icon wow fadeInUp" href="{{ $contact->contact }}" target="_blank"> <i
+                                        class="{{ $contact->icon }}" aria-hidden="true"></i> </a> 
+                                    
+                                @endif
+                                    </li>
                         @endforeach
 
                     </ul>

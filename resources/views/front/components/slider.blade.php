@@ -59,7 +59,7 @@
             @if ($counter === 3 || $counter === 6)
                 @continue
             @endif
-            <li class="d-table"><a href="javascript:void(0)" class="social-icon"><i class="{{ $contact->icon }}"></i>
+            <li class="d-table"><a href="{{ $contact->contact }}" target="_blank" class="social-icon"><i class="{{ $contact->icon }}"></i>
                 </a> </li>
         @endforeach
 
