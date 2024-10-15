@@ -2165,12 +2165,6 @@ header .main-navigation nav .navbar-nav .nav-link{
     }
 }
 
-
-
-
-
-
-
 /* ------------------------------ */
 
 /* Extra small devices (phones, 600px and down) */
@@ -2358,4 +2352,12 @@ header .main-navigation nav .navbar-nav .nav-link{
 .message .close {
     cursor: pointer;
     float: left;
+}
+
+#flash-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; /* Adjust the z-index as needed */
 }

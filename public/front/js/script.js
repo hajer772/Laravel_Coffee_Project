@@ -7,7 +7,7 @@ $(window).on("load", function () {
      ====================================== */
     $('.side-menu').removeClass('hidden');
 
-    setTimeout(function(){
+    setTimeout(function () {
         $('.loader-bg').fadeToggle();
 
     }, 1500);
@@ -31,10 +31,11 @@ jQuery(function ($) {
     /* ===================================
         Nav Scroll
    ====================================== */
-    $(".scroll").on("click", function(event){
+    $(".scroll").on("click", function (event) {
         event.preventDefault();
         $('html,body').animate({
-            scrollTop: $(this.hash).offset().top - 40}, 800);
+            scrollTop: $(this.hash).offset().top - 40
+        }, 800);
     });
 
     /* ===================================
@@ -88,17 +89,17 @@ jQuery(function ($) {
             $(".side-menu").addClass("side-menu-active"), $("#close_side_menu").fadeIn(700)
         }), $("#close_side_menu").on("click", function () {
             $(".side-menu").removeClass("side-menu-active"), $(this).fadeOut(200), $(".pushwrap").removeClass("active");
-            setTimeout(function(){
+            setTimeout(function () {
                 $(".side-menu").addClass("side-menu-opacity");
             }, 500);
         }), $(".side-nav .navbar-nav .nav-link").on("click", function () {
             $(".side-menu").removeClass("side-menu-active"), $("#close_side_menu").fadeOut(200), $(".pushwrap").removeClass("active");
-            setTimeout(function(){
+            setTimeout(function () {
                 $(".side-menu").addClass("side-menu-opacity");
             }, 500);
         }), $("#btn_sideNavClose").on("click", function () {
             $(".side-menu").removeClass("side-menu-active"), $("#close_side_menu").fadeOut(200), $(".pushwrap").removeClass("active");
-            setTimeout(function(){
+            setTimeout(function () {
                 $(".side-menu").addClass("side-menu-opacity");
             }, 500);
         });
@@ -115,7 +116,7 @@ jQuery(function ($) {
             slideShadows: false,
         },
         autoplay: {
-            delay:  5000,
+            delay: 5000,
             disableOnInteraction: true,
         },
         pagination: {
@@ -155,7 +156,31 @@ jQuery(function ($) {
 
 });
 
+/*=====================================
+    Filtering by search
+======================================*/
+function search() {
+    let filter = document.getElementById('find').value.toUpperCase();
+    let item = document.querySelectorAll('.product');
+    let l = document.getElementsByTagName('h3');
+    for (var i = 0; i <= l.length; i++) {
+        let a = item[i].getElementsByTagName('h3')[0];
+        let value = a.innerHTML || a.innerText || a.textContent;
+        if (value.toUpperCase().indexOf(filter) > -1) {
+            item[i].style.display = "";
+        } else {
+            item[i].style.display = "none";
+        }
+    }
+}
 
-document.querySelector('.message .close').addEventListener('click', function() {
+/*============================================
+    For Confirmation message after send order
+==============================================*/
+document.querySelector('.message .close').addEventListener('click', function () {
     this.parentNode.style.display = 'none';
 });
+
+setTimeout(function () {
+    $('#flash-message').fadeIn('slow').delay(3000).fadeOut('slow');
+}, 2000); // Adjust the delay as needed

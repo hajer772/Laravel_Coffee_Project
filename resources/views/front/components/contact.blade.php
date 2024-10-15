@@ -41,30 +41,10 @@
                         <textarea class="form-control" placeholder="{{ __('words.contact-textarea') }}" id="userMessage" name="userMessage"></textarea>
                     </div>
                     <!--Button-->
-                    {{-- <div class="form-group">
-                        <div id='message' style="display: none; "> <span class="badge badge-success">Your order has been sent successfully!</span> </div>
-                    </div> --}}
-
-                    <button type="submit" href="javascript:void(0);" id="submit_btn" onclick="m()"
+                    <button type="submit" href="javascript:void(0);" id="submit_btn" 
                         class="contact_btn btn button btn-medium btn-rounded btn-grey w-100 d-block mt-5 mb-3 ">
                         {{ __('words.contact-button') }}</button>
-                    {{-- <button type='submit' id="try" onclick="m()"> ok</button> --}}
                 </form>
-
-                @if ($errors->any())
-                    <div class="message error">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @elseif (session()->has('success'))
-                    <div class="message alert alert-success alert-dismissible">
-                        <span class="close">&times;</span>
-                        <strong> {{ __("words.message-confirmation") }}</strong>
-                      </div>
-                @endif
             </div>
         </div>
     </div>

@@ -26,6 +26,21 @@
 
 <!-- Start Header -->
 <header id="home" class="cursor-light">
+    @if ($errors->any())
+        <div class="message error" >
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @elseif (session()->has('success'))
+        <div id='flash-message' class="message alert alert-success alert-dismissible text-center">
+            <span class="close">&times;</span>
+            <strong> {{ __('words.message-confirmation') }}</strong>
+        </div>
+    @endif
+    
     <div class="inner-header nav-icon">
         <div class="main-navigation">
             <div class="container">
@@ -97,6 +112,7 @@
     </div>
     <!--Side Nav-->
     <div class="side-menu hidden side-menu-opacity">
+
         <div class="bg-overlay"></div>
         <div class="inner-wrapper">
             <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
@@ -106,6 +122,7 @@
                         <a href="{{ route('front.index') }}" class="navbar-brand"><img
                                 src="{{ asset('front/images/logo.png') }}" alt="logo"></a>
                     </div>
+
                     <div
                         class="col-12 col-lg-8 text-center {{ App::isLocale('ar') ? 'text-lg-right' : 'text-lg-left' }}">
                         <nav class="side-nav w-100">
@@ -173,67 +190,61 @@
             <h2 class="main-font font-weight-600 text-sec mt-2">{{ __('words.place-order') }}</h2>
         </div>
         <!--Contact Form-->
-        <form class="contact-form" id="modal-contact-form-data" action="{{ route('front.send') }}">
+        <form method="POST" class="contact-form" id="modal-contact-form-data" action="{{ route('front.send') }}">
             @csrf
             <div class="row">
                 <!--Result-->
                 <div class="col-12" id="quote_result"></div>
-            
 
-                    <!--Left Column-->
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input class="form-control" id="userName" name="userName"
-                                placeholder="{{ __('words.name') }}" required="" type="text">
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="contact" name="contact"
-                                placeholder="{{ __('words.contact') }} #" required="" type="text">
-                        </div>
+
+                <!--Left Column-->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="userName" name="userName"
+                            placeholder="{{ __('words.name') }}" required="" type="text">
                     </div>
-
-                    <!--Right Column-->
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input class="form-control" id="userEmail" name="userEmail"
-                                placeholder="{{ __('words.email') }}" required="" type="email">
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="quote_address" name="userAddress"
-                                placeholder="{{ __('words.city') }}" required="" type="text">
-                        </div>
+                    <div class="form-group">
+                        <input class="form-control" id="contact" name="contact"
+                            placeholder="{{ __('words.contact') }} #" required="" type="text">
                     </div>
+                </div>
 
-                    <!--Full Column-->
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <textarea class="form-control" id="userMessage" name="userMessage" placeholder="{{ trans('words.explain') }} "></textarea>
-                        </div>
+                <!--Right Column-->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="userEmail" name="userEmail"
+                            placeholder="{{ __('words.email') }}" required="" type="email">
                     </div>
-
-                    <!--Button-->
-
-                    <div class="col-md-12">
-                        <div class="form-check">
-                            <label class="checkbox-lable font-weight-200 font-16">{{ trans('words.contact-phone') }}
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                        {{-- <a href="javascript:void(0)"
-                                        class="btn button btn-medium btn-rounded btn-grey modal_contact_btn"
-                                        id="quote_submit_btn">{{ __("words.Submit_Now") }}</a> --}}
-
-                        <button type="submit" href="javascript:void(0)"
-                            class="btn button btn-medium btn-rounded btn-grey modal_contact_btn"
-                            id="quote_submit_btn">{{ __('words.Submit_Now') }}</button>
-
-
-
+                    <div class="form-group">
+                        <input class="form-control" id="quote_address" name="userAddress"
+                            placeholder="{{ __('words.city') }}" required="" type="text">
                     </div>
+                </div>
+
+                <!--Full Column-->
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <textarea class="form-control" id="userMessage" name="userMessage" placeholder="{{ trans('words.explain') }} "></textarea>
+                    </div>
+                </div>
+
+                <!--Button-->
+
+                <div class="col-md-12">
+                    <div class="form-check">
+                        <label class="checkbox-lable font-weight-200 font-16">{{ trans('words.contact-phone') }}
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <button type="submit" href="javascript:void(0)"
+                        class="btn button btn-medium btn-rounded btn-grey modal_contact_btn"
+                        id="quote_submit_btn">{{ __('words.Submit_Now') }}</button>
+                </div>
 
             </div>
         </form>
+
     </div>
 </header>
 <!-- End Header -->
